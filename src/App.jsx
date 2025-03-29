@@ -69,16 +69,16 @@ function App() {
           <div id="website__about">
             <h1 id="website__title">
               {lang == "RU"
-                ? USER.ru.profession
-                : USER.en.profession}
+                  ? USER.ru.profession
+                  : USER.en.profession}
             </h1>
             <h2 id="website__subtitle">
               {lang == "RU" ? USER.ru.name : USER.en.name}
             </h2>
             <p id="website__description">
               {lang == "RU"
-                ? USER.ru.description
-                : USER.en.description}
+                  ? USER.ru.description
+                  : USER.en.description}
             </p>
             <p id="website__tags">
               {lang == "RU" ? USER.ru.tags : USER.en.tags}
@@ -87,11 +87,18 @@ function App() {
               {lang == "RU" ? USER.ru.notebook : USER.en.notebook}
             </p>
             <div id="website__links">
-              {USER.mycontacts.map((data) => (
-                <a id="hero__link" href={data[0]}>
-                  <i className={data[1]}></i>
-                </a>
-              ))}
+              {
+                USER.mycontacts.map((data) => (
+                    <a id="hero__link" href={data[0]}>
+                      <i className={data[1]}></i>
+                    </a>
+                ))
+              }
+            </div>
+            {/*надо было поднять эти кнопки выше (сюда в контейнер website__about)*/}
+            <div id="languageSwitcher">
+              <button onClick={button1}>RU</button>
+              <button onClick={button2}>EN</button>
             </div>
           </div>
           <div id="website__box">
@@ -99,11 +106,6 @@ function App() {
             <img id="website__box-img" src={USER.foto}></img>
           </div>
         </div>
-      </div>
-
-      <div id="languageSwitcher">
-        <button onClick={button1}>RU</button>
-        <button onClick={button2}>EN</button>
       </div>
     </>
   );
