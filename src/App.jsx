@@ -46,12 +46,12 @@ function App() {
   // а на определенный уже.
   // Получается нажатие на каждую из кнопок влечет за собой целенаправленное
   // изменение языка на фиксированное значение.
-  const button1= () => {
-    setLang("RU") // всегда по нажатию меняет язык на русский
+  const button1 = () => {
+    setLang("RU"); // всегда по нажатию меняет язык на русский
   };
 
   const button2 = () => {
-    setLang("EN")  // всегда по нажатию меняет язык на английский
+    setLang("EN"); // всегда по нажатию меняет язык на английский
   };
 
   return (
@@ -68,17 +68,13 @@ function App() {
         <div id="container website__container">
           <div id="website__about">
             <h1 id="website__title">
-              {lang == "RU"
-                  ? USER.ru.profession
-                  : USER.en.profession}
+              {lang == "RU" ? USER.ru.profession : USER.en.profession}
             </h1>
             <h2 id="website__subtitle">
               {lang == "RU" ? USER.ru.name : USER.en.name}
             </h2>
             <p id="website__description">
-              {lang == "RU"
-                  ? USER.ru.description
-                  : USER.en.description}
+              {lang == "RU" ? USER.ru.description : USER.en.description}
             </p>
             <p id="website__tags">
               {lang == "RU" ? USER.ru.tags : USER.en.tags}
@@ -87,13 +83,11 @@ function App() {
               {lang == "RU" ? USER.ru.notebook : USER.en.notebook}
             </p>
             <div id="website__links">
-              {
-                USER.mycontacts.map((data) => (
-                    <a id="hero__link" href={data[0]}>
-                      <i className={data[1]}></i>
-                    </a>
-                ))
-              }
+              {USER.mycontacts.map((data) => (
+                <a id="hero__link" href={data[0]}>
+                  <i className={data[1]}></i>
+                </a>
+              ))}
             </div>
             {/*надо было поднять эти кнопки выше (сюда в контейнер website__about)*/}
             <div id="languageSwitcher">
