@@ -38,7 +38,7 @@ function App() {
       ],
       ["https://t.me/Rusanufriev", "bx bxl-telegram"],
     ],
-    foto: "/rusfoto.jpg",
+    foto: "/src/public/rusfoto.jpg",
   };
 
   // тут я просто поменял логику кнопок, чтоб по нажатию на каждую из них,
