@@ -1,13 +1,9 @@
 import { useState } from "react";
-import "./App.css";
+import "/src/App.css";
+// import "/src/components/pages/buttons/button.jsx";
 
 function App() {
-  const [lang, setLang] = useState("RU"); // что я сделал: вместо двух
-  // стейтов я сделал один, который отвечает за весь язык на страничке.
-  // Дальше получается мне надо просто по нажатию на одну из кнопок
-  // менять этот стейт (язык все страницы).
-  // А дальше, там где вставляем текст на разных языках - просто проверять наш единственный стейт.
-  // (см ниже как проверяю)
+  const [lang, setLang] = useState("RU");
 
   const USER = {
     ru: {
@@ -38,30 +34,21 @@ function App() {
       ],
       ["https://t.me/Rusanufriev", "bx bxl-telegram"],
     ],
-    foto: "/src/public/rusfoto.jpg",
+    foto: "/src/components/public/rusfoto.jpg",
   };
 
-  // тут я просто поменял логику кнопок, чтоб по нажатию на каждую из них,
-  // менялось значение текста не на противоположный язык (как было раньше),
-  // а на определенный уже.
-  // Получается нажатие на каждую из кнопок влечет за собой целенаправленное
-  // изменение языка на фиксированное значение.
   const button1 = () => {
-    setLang("RU"); // всегда по нажатию меняет язык на русский
+    setLang("RU");
   };
 
   const button2 = () => {
-    setLang("EN"); // всегда по нажатию меняет язык на английский
+    setLang("EN");
   };
 
   return (
     <>
       <header id="header">
-        <span id="logo">
-          {/*проверка осталась такая же как и была, я просто тут поменял название стейтка языка*/}
-          {/*(название переменной где храниться стейт - lang)*/}
-          {lang == "RU" ? USER.ru.fio : USER.en.fio}
-        </span>
+        <span id="logo">{lang == "RU" ? USER.ru.fio : USER.en.fio}</span>
       </header>
 
       <div id="website">
@@ -87,16 +74,14 @@ function App() {
                 <a id="hero__link" href={data[0]}>
                   <i className={data[1]}></i>
                 </a>
-              ))}
-            </div>
-            {/*надо было поднять эти кнопки выше (сюда в контейнер website__about)*/}
-            <div id="languageSwitcher">
-              <button onClick={button1}>RU</button>
-              <button onClick={button2}>EN</button>
+              ))}{" "}
+              <div id="languageSwitcher">
+                <button onClick={button1}>RU</button>
+                <button onClick={button2}>EN</button>{" "}
+              </div>
             </div>
           </div>
           <div id="website__box">
-            {/*здесь убрал фигурные скобки, т.к. они не нужны нам (нет никаких переменных - работы с js)*/}
             <img id="website__box-img" src={USER.foto}></img>
           </div>
         </div>
