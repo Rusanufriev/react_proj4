@@ -1,8 +1,8 @@
-function WebsiteBox() {
+function WebsiteBox({ pwd_to_photo }) {
   return (
     <>
       <div id="website__box">
-        <img id="website__box-img" src={USER.foto}></img>
+        <img id="website__box-img" src={pwd_to_photo.foto}></img>
       </div>
     </>
   );

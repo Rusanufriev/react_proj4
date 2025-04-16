@@ -3,7 +3,6 @@ import "/src/App.css";
 import Header from "../header/header.jsx";
 import USER from "../constants/user.js";
 import WebsiteAbout from "../websiteAbout/websiteAbout.jsx";
-import languageSwitcher from "../shared/Bigbutton/LanguageSwitcher.jsx";
 import WebsiteBox from "../websiteBox/websiteBox.jsx";
 
 function MainPage() {
@@ -35,13 +34,12 @@ function MainPage() {
             user_notebook_ru={USER.ru.notebook}
             user_notebook_en={USER.en.notebook}
             my_contacts={USER.mycontacts}
-            button1={button1}
-            button2={button2}
+            btn1={button1}
+            btn2={button2}
           />
         </div>
       </div>
-      <languageSwitcher />
-      {/* <WebsiteBox /> */}
+       <WebsiteBox pwd_to_photo={USER}/>
     </>
   );
 }

@@ -13,6 +13,11 @@ img {
   height: 100%;
 }
 
+/*доделать*/
+/*#website {*/
+/*  margin-left: 120px;*/
+/*}*/
+
 #languageSwitcher {
   padding: 15px;
 
@@ -23,7 +28,7 @@ img {
   border-radius: 10px;
   font-weight: bold;
   display: inline-block;
-  margin-left: -120px;
+  /*margin-left: 120px;*/
   text-align: left;
   margin-top: 100px;
 

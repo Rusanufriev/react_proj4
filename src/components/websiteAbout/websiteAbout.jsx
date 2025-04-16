@@ -1,3 +1,5 @@
+import LanguageSwitcher from "../shared/Bigbutton/LanguageSwitcher.jsx";
+
 function WebsiteAbout({
   lang,
   user_prof_ru,
@@ -11,8 +13,8 @@ function WebsiteAbout({
   user_notebook_ru,
   user_notebook_en,
   my_contacts,
-  //   button1,
-  //   button2,
+    btn1,
+    btn2
 }) {
   return (
     <>
@@ -37,6 +39,7 @@ function WebsiteAbout({
             </a>
           ))}
         </div>
+        <LanguageSwitcher btn1={btn1} btn2={btn2}/>
       </div>
     </>
   );
