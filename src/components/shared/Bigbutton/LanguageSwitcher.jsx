@@ -1,4 +1,4 @@
-function languageSwitcher({ button1, button2 }) {
+function LanguageSwitcher({ button1, button2 }) {
   return (
     <>
       <div id="languageSwitcher">
@@ -9,4 +9,4 @@ function languageSwitcher({ button1, button2 }) {
     </>
   );
 }
-export default languageSwitcher;
+export default LanguageSwitcher;

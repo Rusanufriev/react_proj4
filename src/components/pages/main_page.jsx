@@ -3,7 +3,7 @@ import "/src/App.css";
 import Header from "../header/header.jsx";
 import USER from "../constants/user.js";
 import WebsiteAbout from "../websiteAbout/websiteAbout.jsx";
-import languageSwitcher from "../shared/Bigbutton/LanguageSwitcher.jsx";
+import LanguageSwitcher from "../shared/Bigbutton/LanguageSwitcher.jsx";
 import WebsiteBox from "../websiteBox/websiteBox.jsx";
 
 function MainPage() {
@@ -40,8 +40,8 @@ function MainPage() {
           />
         </div>
       </div>
-      <languageSwitcher />
-      {/* <WebsiteBox /> */}
+      <LanguageSwitcher button1={button1} button2={button2} />
+      <WebsiteBox USER={USER.foto} />
     </>
   );
 }

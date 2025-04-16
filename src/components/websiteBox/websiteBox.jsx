@@ -1,4 +1,4 @@
-function WebsiteBox() {
+function WebsiteBox({ USER }) {
   return (
     <>
       <div id="website__box">
