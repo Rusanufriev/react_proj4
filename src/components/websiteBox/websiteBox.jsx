@@ -1,3 +1,4 @@
+import "./websiteBox.css"
 function WebsiteBox({ pwd_to_photo }) {
   return (
     <>

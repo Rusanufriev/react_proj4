@@ -1,6 +1,6 @@
 import LanguageSwitcher from "../shared/Bigbutton/LanguageSwitcher.jsx";
 import "./websiteAbout.css";
-import "../websiteBox/websiteBox.css";
+// import "../websiteBox/websiteBox.css";
 function WebsiteAbout({
   lang,
   user_prof_ru,
