@@ -1,0 +1,22 @@
+.languageSwitcher {
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 60px;
+  }
+  button {
+    background-color: rgb(4, 82, 128);
+    transition: 0.5s;
+    border-radius: 10px;
+    min-width: 45px;
+    min-height:25px ;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #45ca1c;
+   }
+   button:hover {
+    background-color: rgb(147, 142, 37);
+    transform: translateY(-5px);
+   } 
+ 

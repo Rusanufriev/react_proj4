@@ -1,3 +1,4 @@
+import "./LanguageSwitcher.css"
 function LanguageSwitcher({ btn1, btn2 }) {
   return (
       <div className="languageSwitcher">

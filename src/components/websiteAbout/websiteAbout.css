@@ -1,0 +1,50 @@
+.website__about {
+    margin-left: 120px;
+    margin-top: 80px;
+  }
+  .website__title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    background: -webkit-linear-gradient(#33ff96, #33d1ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 110px;
+    width: 320px;
+    text-align: left;
+    margin-top: 60px;
+  }
+  .website__subtitle {
+    text-align: left;
+    width: 500px;
+    font-size: 32px;
+    font-weight: 400;
+    height: 45px;
+  }
+  .website__description {
+    text-align: left;
+    width: 500px;
+    font-size: 16px;
+    height: 90px;
+  }
+  .website__links {
+    text-align: left;
+    display: flex;
+    justify-content: 0 2px;
+    width: 500px;
+    margin-top: 60px;
+  }
+  .website__tags {
+    text-align: left;
+    width: 500px;
+    font-size: 16px;
+  } 
+  .hero__link {
+    margin-right: 10px;
+  
+    font-size: 30px;
+    color: #000;
+  }
+  .hero__link:hover {
+    color: #4facfe;
+  } 

@@ -1,3 +1,4 @@
+import "./header.css"
 function Header({ lang, user_fio_ru, user_fio_en }) {
   return (
     <>
