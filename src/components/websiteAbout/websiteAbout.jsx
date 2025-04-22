@@ -14,27 +14,27 @@ function WebsiteAbout({
   user_notebook_en,
   my_contacts,
     btn1,
-    btn2
+    btn2,
 }) {
   return (
     <>
-      <div id="website__about">
-        <h1 id="website__title">
+      <div className="website__about">
+        <h1 className="website__title">
           {lang == "RU" ? user_prof_ru : user_prof_en}
         </h1>
-        <h2 id="website__subtitle">
+        <h2 className="website__subtitle">
           {lang == "RU" ? user_name_ru : user_name_en}
         </h2>
-        <p id="website__description">
+        <p className="website__description">
           {lang == "RU" ? user_desc_ru : user_desc_en}
         </p>
-        <p id="website__tags">{lang == "RU" ? user_tags_ru : user_tags_en}</p>
-        <p id="website__contacts">
+        <p className="website__tags">{lang == "RU" ? user_tags_ru : user_tags_en}</p>
+        <p className="website__contacts">
           {lang == "RU" ? user_notebook_ru : user_notebook_en}
         </p>
-        <div id="website__links">
+        <div className="website__links">
           {my_contacts.map((data) => (
-            <a id="hero__link" href={data[0]}>
+            <a className="hero__link" href={data[0]}>
               <i className={data[1]}></i>
             </a>
           ))}

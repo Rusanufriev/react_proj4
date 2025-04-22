@@ -19,8 +19,8 @@ function MainPage() {
   return (
     <>
       <Header lang={lang} user_fio_ru={USER.ru.fio} user_fio_en={USER.en.fio} />
-      <div id="website">
-        <div id="container website__container">
+      <div className="website">
+        <div className="container website__container">
           <WebsiteAbout
             lang={lang}
             user_prof_ru={USER.ru.profession}
