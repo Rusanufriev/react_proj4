@@ -7,7 +7,13 @@
     justify-content: center;
     align-items: center;
   
+   
+  }
+  .logo {
+    
+
     font-size: 24px;
     font-weight: 300;
-    color: gray;
+    color: rgb(75, 85, 108);
+
   }
