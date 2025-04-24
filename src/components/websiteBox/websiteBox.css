@@ -2,7 +2,7 @@
     max-width: 600px;
     justify-self: center;
     overflow: hidden;
-    border: 7px solid #2d3dea;
+    border: 8px solid #2d3dea;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     animation: ava-animate 4s infinite alternate;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
